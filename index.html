@@ -437,7 +437,9 @@
                     </div>
                 </div>
                 <div class="col-md-5 hidden-sm hidden-xs">
-                    <div style="width: 403px; height: 286px; float: right;" id="allmap"></div>
+                    <div style="width: 403px; height: 286px; float: right;">
+                        <img src="images/map.jpg" alt=""/>
+                    </div>
                 </div>
             </div>
         </div>
@@ -484,23 +486,5 @@
     <script src="js/isotope.pkgd.min.js"></script>
     <script src="js/index.js"></script>
     <script src="js/template.js"></script>
-    <!--<script src="bower_components/konva/konva.js"></script>-->
-    <!--<script src="js/canvas.js"></script>-->
-    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=4qXTGvclMqTZXkLsU3twnMA7"></script>
 </body>
 </html>
-<script type="text/javascript">
-        // 百度地图API功能
-        var map = new BMap.Map("allmap");
-        map.centerAndZoom(new BMap.Point(113.389789,23.138787),15);
-        map.enableScrollWheelZoom(true);
-
-        // 用经纬度设置地图中心点
-        (function theLocation(){
-            map.clearOverlays();
-            var new_point = new BMap.Point(113.389789,23.138787);
-            var marker = new BMap.Marker(new_point);  // 创建标注
-            map.addOverlay(marker);              // 将标注添加到地图中
-            map.panTo(new_point);
-        })();
-</script>
