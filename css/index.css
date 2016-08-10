@@ -431,6 +431,10 @@ fieldset[disabled] .tl_nav .btn-link:focus {
     background-color: #fd3a77;
     color: #fff;
 }
+.modal-body p{
+    text-indent: 28px;
+    line-height: 28px;
+}
 /* Buttons
 ---------------------------------- */
 .btn {
@@ -456,6 +460,118 @@ fieldset[disabled] .tl_nav .btn-link:focus {
     background-color: #fd3a77;
     border-color: #fd3a77;
 }
+/*联系我*/
+.tl-contact{
+    background-color: #F8F8F8;
+}
+.tl-cont-con{
+    overflow: hidden;
+}
+.tl-cont-con p{
+    width: 80%;
+    text-indent: 28px;
+    letter-spacing: 2px;
+    line-height: 24px;
+    /*margin-bottom: 20px;*/
+}
+@media (max-width:767px) {
+    .tl-cont-con p {
+        width: 100%;
+    }
+}
+.tl-cont-con p span{
+    color: #b6b6b6;
+}
+.tl-cont-way{
+    padding-top: 20px;
+}
+.tl-cont-way .weixin{
+    float: left;
+    margin-right: 10px;
+}
+.tl-cont-way .way{
+    font-size: 16px;
+    float: left;
+    line-height: 38px;
+    padding-left: 0;
+}
+.tl-cont-way .way li{
+    padding-left: 30px;
+}
+.tl-cont-way .way .li1{
+    background: url("../images/QQ.png") no-repeat left center;
+}
+.tl-cont-way .way .li2{
+    background: url("../images/call.png") no-repeat left center;
+}
+.tl-cont-way .way .li3{
+    background: url("../images/email.png") no-repeat left center;
+}
+.tl-cont-way .way .li4{
+    background: url("../images/adress.png") no-repeat left center;
+}
 
+/*友情链接*/
+.tl-fre{
+    margin-bottom: 20px;
+}
+.tl-fre-link a{
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 20px;
+}
 
-/**/
+/*3D盒子*/
+.box{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3D;
+    transition: all 2s linear;
+    opacity: 0.8;
+    animation: move 3s linear infinite;
+    margin: 0 auto;
+}
+@keyframes move {
+    from{
+        transform: rotateX(0deg) rotateY(0deg);
+    }to{
+         transform: rotateX(360deg) rotateY(360deg);
+     }
+}
+.left,.right,.front,.back,.top,.bottom{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 120px/100px;
+    text-align: center;
+}
+.left{
+    background-color: red;
+    transform: rotateY(90deg) translateZ(-100px);
+}
+.right{
+    background-color: deeppink;
+    transform: rotateY(90deg) translateZ(100px);
+}
+.front{
+    background-color: aqua;
+    transform: translateZ(100px);
+}
+.back{
+    background-color: blueviolet;
+    transform: translateZ(-100px);
+}
+.top{
+    background-color: green;
+    transform: rotateX(90deg) translateZ(100px);
+}
+.bottom{
+    background-color: yellow;
+    transform: rotateX(90deg) translateZ(-100px);
+}
+.box:hover{
+    animation-play-state: paused;
+}
