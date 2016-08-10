@@ -45,19 +45,7 @@ function banner(){
 }
 
 $(function () {
-    $(".navbar .li1").click(function () {
+    $(".navbar .top0").click(function () {
         $("html,body").animate({scrollTop: 0}, 800)
-    });
-    $(".navbar .li2").click(function () {
-        $("html,body").animate({scrollTop: "200px"}, 800)
-    });
-    $(".navbar .li3").click(function () {
-        $("html,body").animate({scrollTop: "500px"}, 1000)
-    });
-    $(".navbar .li4").click(function () {
-        $("html,body").animate({scrollTop: "1200px"}, 1000)
-    });
-    $(".navbar .li5").click(function () {
-        $("html,body").animate({scrollTop: "2000px"}, 1000)
     });
 })
